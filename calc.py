@@ -40,10 +40,14 @@ def run():
         return division(a, b)
     elif oper == "//":
         return floor_division(a, b)
+    elif oper == "%":
+        return mod(a, b)
+    elif oper == "**":
+        return power(a, b)
 
 
 def operation():
-    oper = input("Выберите операцию (Введите +, -, *, / или //): ")
+    oper = input("Выберите операцию (Введите +, -, *, /, %, ** или //): ")
     return oper
 
 
